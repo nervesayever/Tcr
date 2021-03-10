@@ -6,6 +6,27 @@ public class User {
     private String password;
     private String role;
     private String ip;
+    private String phonenum;
+
+    public String getPhonenum() {
+        return phonenum;
+    }
+
+    public void setPhonenum(String phonenum) {
+        this.phonenum = phonenum;
+    }
+
+    public String getEmail() {
+        return Email;
+    }
+
+    public void setEmail(String email) {
+        Email = email;
+    }
+
+    private String Email;
+    private String Adress;
+
 
     public String getUsername() {
         return Username;
@@ -37,5 +58,13 @@ public class User {
 
     public void setIp(String ip) {
         this.ip = ip;
+    }
+
+    public String getAdress() {
+        return Adress;
+    }
+
+    public void setAdress(String adress) {
+        Adress = adress;
     }
 }
