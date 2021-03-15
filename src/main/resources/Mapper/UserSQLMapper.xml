@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.test.demo.Mapper.UserMapper">
-    <select id="getById" parameterType="int" resultType="com.xf.pojo.User">
-        SELECT * FROM t_user WHERE id=#{id}
+    <select id="Login" parameterType="int" resultType="java.lang.String">
+        SELECT fsetid FROM lsetlist where fsetcode = 1 and fyear = 2020
     </select>
 </mapper>
