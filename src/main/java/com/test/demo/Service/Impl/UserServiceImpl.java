@@ -1,6 +1,7 @@
 package com.test.demo.Service.Impl;
 
 
+import com.test.demo.Bean.User;
 import com.test.demo.Mapper.UserMapper;
 import com.test.demo.Service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,8 +17,8 @@ public class UserServiceImpl implements UserService {
 
 
     @Override
-    public void Login(String username, String password) {
-        userMapper.Login(username,password);
+    public String Login(String username, String password) {
+        return userMapper.Login(username,password);
     }
 
     @Override
@@ -41,7 +42,9 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void Signin() {
-
+    public void Signup(User user) {
+        userMapper.Signup(user);
     }
+
+
 }
